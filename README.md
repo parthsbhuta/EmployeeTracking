@@ -1,27 +1,49 @@
+# Employee Tracking
+
 ## employee-tracking
 
-This is where you include your WebPart documentation.
+This webpart track the Employee Work time and display employee own timesheet on web part to see the detail for current day.
 
-### Building the code
+### Setup the solution and WebPart
 
-```bash
-git clone the repo
-npm i
-npm i -g gulp
-gulp
-```
+-   Go to Site Content and create a list and columns as follows
+    -   Description – multiline with rich content.
+	-   Date – Date and time Format
+	-   Time
+	-   Category
+-   Clone the Solution repo
+-   Run the below commands
+    -   npm install
+    -   gulp build
+    -   gulp serve
+-   Open the SharePoint Online site workbench (i.e., (SharePoint Site URL) +/_layouts/workbench.aspx)
+-   Add Webpart: ParthSBhuta
 
-This package produces the following:
 
-* lib/* - intermediate-stage commonjs build artifacts
-* dist/* - the bundled script, along with other resources
-* deploy/* - all resources which should be uploaded to a CDN.
+### Build Package
 
-### Build options
+-   gulp clean
+-   gulp build
+-   gulp bundle --ship
+-   gulp package-solution --ship
 
-gulp clean - TODO
-gulp test - TODO
-gulp serve - TODO
-gulp bundle - TODO
-gulp package-solution - TODO
-"# EmployeeTracking" 
+### Features
+
+-   Show Employee Current daye TimeSheet
+-   Employee can add more Time logs
+
+### Supports
+
+-   IE11+, Chrome
+
+### Solution
+
+Solution|Author(s)
+--------|---------
+employee-tracking | Parth S Bhuta
+
+### Version history
+
+Version|Date|Comments
+-------|----|--------
+1.0.0.0|Oct 06, 2020|Initial release"# Employee-Tracking" 

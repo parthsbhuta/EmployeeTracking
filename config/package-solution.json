@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "employee-tracking-client-side-solution",
+    "id": "9b6b9f2b-60cc-41a7-b536-1b16f9f2c3a2",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "isDomainIsolated": false
+  },
+  "paths": {
+    "zippedPackage": "solution/employee-tracking.sppkg"
+  }
+}

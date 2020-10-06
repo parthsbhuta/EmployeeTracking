@@ -1,0 +1,264 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+
+.employeeTracking {
+  width          : 100%;
+  float          : left;
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+  position       : relative;
+}
+
+.employeeTracking {
+  .et_innerbox {
+    width    : 100%;
+    max-width: 1000px;
+    float    : left;
+  }
+
+  .welcomerow {
+    width          : 100%;
+    float          : left;
+    margin-bottom  : 20px;
+    display        : flex;
+    align-items    : center;
+    justify-content: space-between;
+
+    span {
+      font-size: 16px;
+
+      b {
+        color         : #05358c;
+        text-transform: capitalize;
+      }
+    }
+
+    .addbtn {
+      width          : 150px;
+      float          : left;
+      color          : #fff;
+      background     : #05358c;
+      text-transform : uppercase;
+      letter-spacing : 1px;
+      font-size      : 16px;
+      height         : 40px;
+      display        : flex;
+      align-items    : center;
+      justify-content: center;
+      cursor         : pointer;
+    }
+  }
+
+  .table_box {
+    width: 100%;
+    float: left;
+  }
+}
+
+div[class*="table_box"]>div[role="heading"] {
+  display: none !important;
+}
+
+div[class*="_TableCol"] {
+  background : #05358c;
+  color      : #fff !important;
+  font-size  : 15px !important;
+  font-weight: 500;
+  text-align : left;
+}
+
+div[class*="_TableCell"] {
+  color        : #111;
+  font-size    : 16px;
+  border-left  : 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+div[class*="_TableCell"]:last-child {
+  border-right: 1px solid #ccc;
+}
+
+div[id^="workbenchPageContent"] {
+  max-width: 100%;
+}
+
+div[class^="CanvasZone"] {
+  max-width: 100%;
+  padding  : 0;
+}
+
+div[class^="CanvasSection-col"] {
+  max-width: 100%;
+  padding  : 0;
+}
+
+div[class^="ms-Dialog-main"] {
+  width    : 600px !important;
+  max-width: 600px !important;
+}
+
+.modalPopup_header {
+  width          : calc(100% - 40px);
+  float          : left;
+  display        : flex;
+  align-items    : center;
+  justify-content: space-between;
+  padding        : 12px 20px;
+  border-bottom  : 1px solid #eee;
+}
+
+.modalPopup_header h2 {
+  margin     : 0;
+  font-size  : 18px;
+  font-weight: 500;
+}
+
+.modalPopup {
+  float  : left;
+  width  : 100%;
+  padding: 0;
+}
+
+.hourserror {
+  width          : calc(100% - 40px);
+  float          : left;
+  color          : red;
+  padding        : 10px 20px;
+  background     : #ffebeb;
+  font-weight    : 600;
+  display        : flex;
+  align-items    : center;
+  justify-content: space-between;
+}
+
+.closeBtnDiv {
+  width  : 12px;
+  height : 12px;
+  cursor : pointer;
+  padding: 5px;
+}
+
+.closeBtnDiv svg {
+  width : 12px;
+  height: 12px;
+  float : left;
+}
+
+.addtime {
+  width          : calc(100% - 40px);
+  float          : left;
+  display        : flex;
+  justify-content: space-between;
+  flex-wrap      : wrap;
+  padding        : 20px 20px 0;
+  margin         : 0;
+
+  li {
+    float         : left;
+    display       : flex;
+    flex-direction: column;
+    margin-bottom : 15px;
+
+    label {
+      width      : 100%;
+      float      : left;
+      font-size  : 15px;
+      margin     : 0 0 3px;
+      font-weight: 600;
+    }
+
+    input {
+      width       : calc(100% - 14px);
+      float       : left;
+      height      : 44px;
+      border      : 1px solid #ccc !important;
+      outline     : none !important;
+      padding-left: 10px;
+    }
+  }
+
+  li.taskbox {
+    width: calc(100% - 190px);
+  }
+
+  li.hours {
+    width: 170px;
+
+    input {
+      text-align: center;
+      font-size : 18px;
+    }
+  }
+
+  li.dec {
+    width: 100%;
+  }
+
+}
+
+.savebtn,
+.popupbtn {
+  width          : 100px;
+  cursor         : pointer;
+  margin         : 0 calc((100% - 100px) / 2) 15px;
+  float          : left;
+  height         : 40px;
+  background     : #05358c;
+  color          : #fff;
+  text-transform : uppercase;
+  letter-spacing : 2px;
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+}
+
+.popupbtn {
+  margin: 30px calc((100% - 100px)/2) 0
+}
+
+.showmainerror {
+  float     : left;
+  color     : red;
+  position  : relative;
+  left      : 0;
+  top       : 0;
+  width     : calc(100% - 20px);
+  background: #ff000036;
+  padding   : 10px;
+}
+
+div[class*="text-danger"] {
+  color: #f00;
+}
+
+.loader {
+  width          : 100%;
+  float          : left;
+  position       : absolute;
+  top            : 0;
+  left           : 0;
+  height         : 100%;
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+  z-index        : 11;
+  background     : rgba(255, 255, 255, 0.80);
+}
+
+.mb_success_box {
+  display        : flex;
+  flex-direction : column;
+  align-items    : center;
+  justify-content: center;
+  padding        : 30px 0;
+  font-size      : 16px;
+
+  p {
+    margin-bottom: 5px;
+    margin-top   : 0;
+
+    b {
+      color: #05358c;
+    }
+  }
+}
